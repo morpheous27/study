@@ -1,0 +1,8 @@
+<div ng-controller="pHController">
+<select
+  ng-model="selectedAnimal"
+  name="Animals"
+  ng-change="onChangeAnimal(selectedAnimal)"
+  ng-options="x.name for x 	in dropDownData">
+</select>
+</div>
