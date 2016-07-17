@@ -1,0 +1,10 @@
+<div
+	style="width: 25%; height: 100%; border: 1px; border-style: solid; position: fixed">
+	<ul>
+		<li ng-repeat="obj in data"><a style="display: block" href="">{{obj.name}}</a>
+		<ul>
+				<li ng-repeat="subObj in obj.subMenu"><a style="display: block"
+					ng-href="{{subObj.url}}">{{subObj.name}}</a></li>
+			</ul></li>
+	</ul>
+</div>
